@@ -44,7 +44,7 @@ pipeline {
                         sh '''
                         echo "Executing playbook"
                         sleep 120
-                        cd playbook && sudo /usr/local/bin/ansible-playbook jar.yml --key-file "Final-project/terraform.pem"
+                        cd playbook && sudo /usr/local/bin/ansible-playbook jar.yml --key-file "playbook/terraform.pem"
                         '''
                         }
                     }

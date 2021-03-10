@@ -9,7 +9,7 @@
           yum: name=java-11-openjdk-devel state=present
         - name: Copy file with owner & permissions
           copy:
-            src: /var/lib/jenkins/workspace/Devops/Final-project/java-program/target/hello-world-0.0.*-SNAPSHOT.jar
+            src: /var/lib/jenkins/workspace/Devops/Final-project/java-program/target/hello-world*
             dest: /tmp/
             owner: root
             group: root
